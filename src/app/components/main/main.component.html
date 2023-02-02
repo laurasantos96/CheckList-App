@@ -1,0 +1,13 @@
+
+    <p>{{ title }}</p>
+    <ul class="list-group">
+     <app-item
+     [item]="item" [index]="i"
+        *ngFor="let item of listItems | filterItems:codeFilter,
+        let i = index "
+     ></app-item>
+     
+    </ul>
+    
+
+

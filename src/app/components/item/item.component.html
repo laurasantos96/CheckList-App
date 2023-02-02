@@ -1,0 +1,6 @@
+<li class="list-group-item">
+    <input type="checkbox" [formControl]="chkItem" [id]="index">
+    <label [for]="index">{{ item.name }}</label>
+    <button (click)="deleteItem(item.id)">X</button>
+</li>
+  
